@@ -9,6 +9,15 @@ End-to-end data science project for predicting telecom customer churn using Pyth
 - **Power BI:** Interactive dashboard for churn insights
 - **Dataset:** IBM Telco Customer Churn dataset
 
+## Python Libraries Used
+
+- `pandas` - data loading, cleaning, and CSV export
+- `openpyxl` - reading the Excel dataset
+- `scikit-learn` - preprocessing, train-test split, Random Forest model, and evaluation metrics
+- `matplotlib` - charts and plots
+- `seaborn` - EDA, confusion matrix, and feature importance visuals
+- `jupyter` - running the notebook
+
 ## Dashboard Preview
 
 ![Telecom Customer Churn Dashboard](assets/dashboard.png)
@@ -35,8 +44,7 @@ End-to-end data science project for predicting telecom customer churn using Pyth
 | Path | Description |
 | --- | --- |
 | `src/churn_analysis.py` | Reproducible Python ML pipeline from data loading to export |
-| `churn_analysis.ipynb` | Notebook entry point for running the project in Jupyter |
-| `Telecom_Churn_Analysis.html` | Original exported notebook/report HTML |
+| `churn_analysis.ipynb` | Full Jupyter Notebook with code, outputs, and visuals |
 | `data/Telco_customer_churn.xlsx` | IBM Telco Customer Churn dataset |
 | `data/churn_results.csv` | Model predictions used in Power BI |
 | `reports/Telco_Churn_Dashboard.pbix` | Power BI dashboard file |
@@ -45,6 +53,21 @@ End-to-end data science project for predicting telecom customer churn using Pyth
 | `assets/dashboard.png` | Power BI dashboard screenshot |
 | `assets/confusion_matrix.png` | Confusion matrix visualization |
 | `assets/feature_importance.png` | Top feature importance chart |
+| `LICENSE` | MIT License |
+
+## Installation
+
+Install all Python libraries used in this project:
+
+```bash
+pip install pandas openpyxl scikit-learn matplotlib seaborn jupyter
+```
+
+Or install from the requirements file:
+
+```bash
+pip install -r requirements.txt
+```
 
 ## How to Run
 
@@ -55,14 +78,20 @@ End-to-end data science project for predicting telecom customer churn using Pyth
 pip install -r requirements.txt
 ```
 
-3. Run the ML pipeline:
+3. Open and run the notebook:
+
+```bash
+jupyter notebook churn_analysis.ipynb
+```
+
+4. Or run the Python pipeline directly:
 
 ```bash
 python src/churn_analysis.py
 ```
 
-4. Open `reports/Telco_Churn_Dashboard.pbix` in Power BI Desktop.
-5. If needed, refresh the dashboard data source to use `data/churn_results.csv`.
+5. Open `reports/Telco_Churn_Dashboard.pbix` in Power BI Desktop.
+6. If needed, refresh the dashboard data source to use `data/churn_results.csv`.
 
 ## Model Summary
 
